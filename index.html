@@ -1,0 +1,1646 @@
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MEDHA SAHU - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#848484",
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#1b1b1b",
+                        "tertiary": "#000000",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "background": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-container": "#848484",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "primary-container": "#1b1b1b",
+                        "surface-dim": "#dadada",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#5e5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-container": "#626263",
+                        "secondary-container": "#e1dfdf",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#e4e2e2",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "surface-variant": "#e2e2e2",
+                        "outline-variant": "#cfc4c5",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary-fixed": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#464747",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "outline": "#7e7576"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "section-gap": "160px",
+                        "margin-edge": "64px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": [
+                            "Inter"
+                        ],
+                        "headline-md": [
+                            "Inter"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Inter"
+                        ],
+                        "headline-display": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-sm": [
+                            "12px",
+                            {
+                                "lineHeight": "100%",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "120%",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "160%",
+                                "letterSpacing": "0",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-lg": [
+                            "20px",
+                            {
+                                "lineHeight": "160%",
+                                "letterSpacing": "0",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "64px",
+                            {
+                                "lineHeight": "115%",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-display": [
+                            "120px",
+                            {
+                                "lineHeight": "110%",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        position: relative;
+    }
+
+    /* Noise texture for premium editorial feel */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.02;
+        pointer-events: none;
+        z-index: 9999;
+    }
+
+    .spa-view {
+        display: none;
+        animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    .spa-view.active {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Scroll reveal animations */
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Hover Underline effect */
+    .hover-underline {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .hover-underline::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform-origin: bottom right;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hover-underline:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+</style>
+
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary pb-20 md:pb-0">
+    <nav
+        class="fixed top-0 w-full z-50 border-none flat no shadows bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md transition-all duration-500">
+        <div class="flex justify-between items-center h-24 px-8 md:px-16 max-w-[1440px] mx-auto">
+            <a href="#home"
+                class="text-xl font-black tracking-tight text-neutral-900 dark:text-neutral-50 hover-underline transition-colors duration-300"
+                onclick="navigateTo('home')">
+                MEDHA SAHU
+            </a>
+            <div class="hidden md:flex gap-8">
+                <a class="font-inter uppercase tracking-widest text-xs font-semibold text-neutral-900 dark:text-neutral-50 pb-1 hover-underline transition-colors duration-300"
+                    href="#home" onclick="navigateTo('home')">Home</a>
+                <a class="font-inter uppercase tracking-widest text-xs font-semibold text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 hover-underline"
+                    href="#about" onclick="navigateTo('home')">About</a>
+                <a class="font-inter uppercase tracking-widest text-xs font-semibold text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 hover-underline"
+                    href="#archive" onclick="navigateTo('archive')">Archive</a>
+                <a class="font-inter uppercase tracking-widest text-xs font-semibold text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 hover-underline"
+                    href="#contact" onclick="navigateTo('home')">Contact</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="view-home" class="spa-view active">
+        <main class="max-w-container-max mx-auto px-8 md:px-16 pt-32 pb-section-gap">
+            <div id="hero"><!-- Hero Section -->
+                <section class="min-h-[819px] flex flex-col justify-center mb-section-gap">
+                    <div class="max-w-[1000px]">
+                        <h1
+                            class="font-headline-display text-headline-display text-primary mb-8 tracking-tight text-balance reveal">
+                            Where Journalism Meets Storytelling and Media Innovation.
+                        </h1>
+                        <p class="font-body-lg text-body-lg text-secondary max-w-2xl text-pretty reveal">
+                            Multimedia journalism student skilled in reporting, video production, and visual
+                            storytelling. From writing and reporting to editing and design, I create content that
+                            connects people with stories, ideas, and reality.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <!-- Project Gallery -->
+            <section class="mb-section-gap" id="projects">
+                <div class="grid grid-cols-12 gap-x-gutter gap-y-24">
+                    <!-- Project 1 -->
+                    <article class="col-span-12 md:col-span-8 group cursor-pointer reveal"
+                        onclick="window.location.hash='#project-graphic-design'">
+                        <div class="w-full aspect-[4/3] bg-surface-variant overflow-hidden mb-6 relative">
+                            <img alt="Graphic Design"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="Graphic Design/graphic design.png" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="inline-block bg-surface-container-low px-2 py-1 self-start">
+                                <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Print
+                                    & Layout</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary text-balance reveal">Graphic
+                                Design</h2>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="col-span-12 md:col-span-4 group cursor-pointer mt-0 md:mt-32 reveal"
+                        onclick="window.location.hash='#project-ad-pr'">
+                        <div class="w-full aspect-[3/4] bg-surface-variant overflow-hidden mb-6 relative">
+                            <img alt="Ad & PR"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Ad & PR cover" src="Ad& PR/IMG-20241125-WA0090.jpg"
+                                onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCUGVmRR4m9rFPupvP7oGWFs655YNd5tCXVzy6lRI2coy3aTIaoN5tOPbG_piZV5RYIFst9wfttmfUhQGKb8fHkZIsSWfjY7lFror1DX6_TrcIPzWCtFAMCWNlXwPx2xuwxPs7n9YpErihEvhU_8pISs5o9cvzBO2sNleT1xMgvqYtqxTu3mIehop4DCgxJ9VuX6AodmqQLxEDNEv0TCzmlRJr1WCCYSQPuL9DK-qoLD-rVbo8As0k2PcEv92AM1LDHE2_m85haxYjR'" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="inline-block bg-surface-container-low px-2 py-1 self-start">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Campaign
+                                    Strategy</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary text-balance reveal">Ad & PR</h2>
+                        </div>
+                    </article>
+                    <!-- Project 3 (Spans 5 cols) -->
+                    <article class="col-span-12 md:col-span-5 group cursor-pointer reveal"
+                        onclick="window.location.hash='#project-achievements'">
+                        <div class="w-full aspect-[4/5] bg-surface-variant overflow-hidden mb-6 relative">
+                            <img alt="Achievements"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Published articles and achievements" src="Achievement/Ad Prize.jpeg"
+                                onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBwFd8ovtVIaWfWZlHAI2yzSZNjlXJHhFRN6Cp3W38Q2m62UJa1hndHQ5H78cMXz8f5d4Rw6faRRT7LimMM_KxlvvBAafktqaP6LGQkBKW6Dgcg8QJynmavnu4L7j3EmQBpCegL0hudv5iWPFivbwEdjkiBhUpxy7Dca77rLkayQ8tIcrT34zPGRZy8oYzUivu_OupqdufprTjnUBo5h4XLSCUtMyaUZtz3Gp2sGzOALmik09KXI_GXmAqxCxiW38pxDp27OoptdwXR'" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="inline-block bg-surface-container-low px-2 py-1 self-start">
+                                <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Press
+                                    & Awards</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary text-balance reveal">Achievements
+                            </h2>
+                        </div>
+                    </article>
+                    <!-- Project 4 (Spans 7 cols) -->
+                    <article class="col-span-12 md:col-span-7 group cursor-pointer mt-0 md:mt-16 reveal"
+                        onclick="window.location.hash='#project-video'">
+                        <div class="w-full aspect-[16/9] bg-surface-variant overflow-hidden mb-6 relative bg-black">
+                            <video autoplay loop muted playsinline
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="Video/01500.mp4"></video>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="inline-block bg-surface-container-low px-2 py-1 self-start">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Multimedia</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary text-balance reveal">Video &
+                                Dissertation</h2>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div id="about" class="pt-24 border-t border-outline-variant/30 mt-24">
+                <div class="mb-[80px]">
+                    <h1 class="font-headline-display text-headline-display text-primary max-w-4xl text-balance reveal">
+                        About Me.</h1>
+                </div>
+                <!-- Biography & Portrait -->
+                <section class="grid grid-cols-12 gap-gutter mb-section-gap items-start">
+                    <div class="col-span-12 md:col-span-5 relative mb-12 md:mb-0">
+                        <img alt="Medha Sahu Portrait" class="w-full h-auto object-cover rounded-xl shadow-lg"
+                            src="About me/Medha.jpeg" />
+                    </div>
+                    <div class="col-span-12 md:col-span-6 md:col-start-7 pt-12">
+                        <h2 class="font-headline-md text-headline-md text-primary mb-8 text-balance reveal">The Approach
+                        </h2>
+                        <div class="space-y-8 font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            <p>
+                                I'm Medha, a multimedia journalism student passionate about telling stories that inform,
+                                engage, and create impact. My work combines reporting, writing, video production, and
+                                design to bring real-world stories to life in meaningful ways.
+                            </p>
+                            <p>
+                                Through my academic and practical experiences, I have worked on magazine design, field
+                                reporting, video editing, and content creation. From contributing to Comma Magazine to
+                                working with platforms like Lakecity Live and Lakecity Voice, I have gained hands-on
+                                exposure to both newsroom environments and digital storytelling.
+                            </p>
+                            <p>
+                                My approach is rooted in clarity, creativity, and connection. Whether itâ€™s writing a
+                                feature, producing a video story, or designing a campaign, I focus on creating content
+                                that is easy to understand, visually engaging, and relevant to todayâ€™s audience. For
+                                me,
+                                journalism is not just about reporting factsâ€”itâ€™s about shaping how stories are
+                                seen,
+                                heard, and understood.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Philosophy Bento -->
+                <section class="mb-section-gap">
+                    <div class="grid grid-cols-12 gap-gutter">
+                        <div class="col-span-12 mb-16">
+                            <h2
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest border-b border-outline-variant pb-4 inline-block text-balance reveal">
+                                Core Principles</h2>
+                        </div>
+                        <div
+                            class="col-span-12 md:col-span-4 bg-surface p-12 border border-outline-variant/30 flex flex-col justify-between aspect-square">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-8"
+                                data-icon="edit_note">edit_note</span>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-4 text-balance reveal">
+                                    Storytelling Clarity
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant text-pretty reveal">
+                                    Clear and impactful storytelling is at the core of my work. I focus on presenting
+                                    information in a way that is easy to understand, engaging, and meaningful for the
+                                    audience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-12 md:col-span-4 bg-surface p-12 border border-outline-variant/30 flex flex-col justify-between aspect-square">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-8"
+                                data-icon="videocam">videocam</span>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-4 text-balance reveal">
+                                    Visual Communication
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant text-pretty reveal">
+                                    From video production to design, I use visuals to enhance storytelling. Strong
+                                    visuals help simplify complex ideas and create a deeper connection with the
+                                    audience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-12 md:col-span-4 bg-surface p-12 border border-outline-variant/30 flex flex-col justify-between aspect-square">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-8"
+                                data-icon="groups">groups</span>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-4 text-balance reveal">
+                                    Audience Connection
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant text-pretty reveal">
+                                    I believe journalism should connect with people. Whether through writing, video, or
+                                    campaigns, I aim to create content that resonates with real-world experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Experience / Services -->
+                <section class="grid grid-cols-12 gap-gutter mb-section-gap">
+                    <div class="col-span-12 md:col-span-4">
+                        <h2
+                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest border-b border-outline-variant pb-4 inline-block mb-12 text-balance reveal">
+                            Capabilities</h2>
+                    </div>
+                    <div class="col-span-12 md:col-span-8">
+                        <div
+                            class="border-b border-outline-variant/30 py-8 flex justify-between items-center group hover:bg-surface transition-colors duration-300 -mx-8 px-8 cursor-default">
+                            <h3 class="font-headline-lg text-headline-lg text-primary text-balance reveal">Multimedia
+                                Journalism
+                            </h3>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">01</span>
+                        </div>
+                        <div
+                            class="border-b border-outline-variant/30 py-8 flex justify-between items-center group hover:bg-surface transition-colors duration-300 -mx-8 px-8 cursor-default">
+                            <h3 class="font-headline-lg text-headline-lg text-primary text-balance reveal">Reporting &
+                                News Writing
+                            </h3>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">02</span>
+                        </div>
+                        <div
+                            class="border-b border-outline-variant/30 py-8 flex justify-between items-center group hover:bg-surface transition-colors duration-300 -mx-8 px-8 cursor-default">
+                            <h3 class="font-headline-lg text-headline-lg text-primary text-balance reveal">Video
+                                Production & Editing
+                                Systems</h3>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">03</span>
+                        </div>
+                        <div
+                            class="border-b border-outline-variant/30 py-8 flex justify-between items-center group hover:bg-surface transition-colors duration-300 -mx-8 px-8 cursor-default">
+                            <h3 class="font-headline-lg text-headline-lg text-primary text-balance reveal">Graphic
+                                Design & Advertising
+                            </h3>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">04</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="contact" class="pt-24 border-t border-outline-variant/30 mt-24">
+
+                <!-- Large Heading -->
+                <div class="mb-[120px]">
+                    <h1 class="font-headline-display text-headline-display text-primary max-w-4xl text-balance reveal">
+                        Get in touch.
+                    </h1>
+                </div>
+                <!-- 12-Column Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <!-- Left Column: Contact Info (Spans 4 cols) -->
+                    <div class="col-span-1 md:col-span-4 flex flex-col gap-12">
+                        <div>
+                            <h2
+                                class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase tracking-widest text-balance reveal">
+                                Inquiries</h2>
+                            <a class="font-body-lg text-body-lg text-primary hover:text-secondary transition-colors duration-300 block"
+                                href="mailto:medhasahu963@gmail.com">
+                                medhasahu963@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <h2
+                                class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase tracking-widest text-balance reveal">
+                                Social</h2>
+                            <ul class="flex flex-col gap-3">
+                                <li>
+                                    <a class="font-body-lg text-body-lg text-primary hover:text-secondary transition-colors duration-300 inline-block"
+                                        href="https://www.instagram.com/medha_1205?igsh=MXkwNmUwNTVsNWt6Zg==">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="font-body-lg text-body-lg text-primary hover:text-secondary transition-colors duration-300 inline-block"
+                                        href="https://www.linkedin.com/in/medha-sahu-media?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                                        LinkedIn
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2
+                                class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase tracking-widest text-balance reveal">
+                                Location</h2>
+                            <p class="font-body-lg text-body-lg text-primary text-pretty reveal">
+                                Chhatisgarh, CG, India <br />
+                                Available globally
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Right Column: Contact Form (Spans 7 cols, offset by 1) -->
+                    <div class="col-span-1 md:col-span-7 md:col-start-6 mt-16 md:mt-0">
+                        <form action="#success" onsubmit="window.location.hash='#success'; return false;"
+                            class="flex flex-col gap-12 w-full max-w-2xl">
+                            <!-- Input: Name -->
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-sm text-label-sm text-primary uppercase"
+                                    for="name">Name</label>
+                                <input
+                                    class="w-full bg-transparent border-0 border-b border-primary text-primary font-body-md text-body-md px-0 py-3 focus:ring-0 focus:border-b-2 focus:border-primary transition-all duration-200"
+                                    id="name" name="name" placeholder="Jane Doe" type="text" />
+                            </div>
+                            <!-- Input: Email -->
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-sm text-label-sm text-primary uppercase"
+                                    for="email">Email</label>
+                                <input
+                                    class="w-full bg-transparent border-0 border-b border-primary text-primary font-body-md text-body-md px-0 py-3 focus:ring-0 focus:border-b-2 focus:border-primary transition-all duration-200"
+                                    id="email" name="email" placeholder="jane@example.com" type="email" />
+                            </div>
+                            <!-- Input: Message -->
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-sm text-label-sm text-primary uppercase"
+                                    for="message">Message</label>
+                                <textarea
+                                    class="w-full bg-transparent border-0 border-b border-primary text-primary font-body-md text-body-md px-0 py-3 focus:ring-0 focus:border-b-2 focus:border-primary transition-all duration-200 resize-none"
+                                    id="message" name="message" placeholder="Tell me about your project..."
+                                    rows="4"></textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="pt-8">
+                                <button
+                                    class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest py-5 px-12 rounded hover:bg-surface-container-lowest hover:text-primary border hover:border-primary transition-all duration-300 w-full sm:w-auto"
+                                    type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="view-archive" class="spa-view">
+        <main class="w-full max-w-[1440px] mx-auto px-8 md:px-16 pt-[240px] pb-section-gap">
+
+            <!-- Header -->
+            <header class="mb-32 max-w-4xl">
+                <h1 class="font-headline-display text-headline-display text-primary mb-8 text-balance reveal">Archive
+                </h1>
+                <p class="font-body-lg text-body-lg text-secondary w-full md:w-2/3 text-pretty reveal">A chronological
+                    collection of past projects, experiments, and collaborations.</p>
+            </header>
+            <!-- Archive List View -->
+            <div class="w-full border-t border-surface-variant flex flex-col">
+                <!-- Table Header (Visible on Desktop) -->
+                <div
+                    class="hidden md:flex items-center w-full py-4 border-b border-surface-variant text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+                    <div class="w-32">Year</div>
+                    <div class="flex-1">Project Title</div>
+                    <div class="w-64">Category</div>
+                    <div class="w-32 text-right">Status</div>
+                </div>
+                <!-- Row 1 -->
+                <a href="#project-aura"
+                    class="group flex flex-col md:flex-row md:items-center w-full py-8 md:py-12 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 md:px-0 md:mx-0 cursor-pointer"
+                    href="#">
+                    <div class="font-label-sm text-label-sm text-secondary w-32 mb-2 md:mb-0">2024</div>
+                    <div
+                        class="flex-1 font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">
+                        Nova Brand Identity</div>
+                    <div class="font-label-sm text-label-sm text-secondary w-64 mt-4 md:mt-0 uppercase">Brand / Strategy
+                    </div>
+                    <div
+                        class="font-label-sm text-label-sm text-primary w-32 mt-4 md:mt-0 md:text-right flex items-center md:justify-end gap-2 uppercase">
+                        Live <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                    </div>
+                </a>
+                <!-- Row 2 -->
+                <a href="#project-krom"
+                    class="group flex flex-col md:flex-row md:items-center w-full py-8 md:py-12 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 md:px-0 md:mx-0 cursor-pointer"
+                    href="#">
+                    <div class="font-label-sm text-label-sm text-secondary w-32 mb-2 md:mb-0">2023</div>
+                    <div
+                        class="flex-1 font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">
+                        Aura Digital Experience</div>
+                    <div class="font-label-sm text-label-sm text-secondary w-64 mt-4 md:mt-0 uppercase">UI/UX / Motion
+                    </div>
+                    <div
+                        class="font-label-sm text-label-sm text-primary w-32 mt-4 md:mt-0 md:text-right flex items-center md:justify-end gap-2 uppercase">
+                        Live <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                    </div>
+                </a>
+                <!-- Row 3 -->
+                <a class="group flex flex-col md:flex-row md:items-center w-full py-8 md:py-12 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 md:px-0 md:mx-0 cursor-pointer"
+                    href="#">
+                    <div class="font-label-sm text-label-sm text-secondary w-32 mb-2 md:mb-0">2023</div>
+                    <div
+                        class="flex-1 font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">
+                        Kora Editorial</div>
+                    <div class="font-label-sm text-label-sm text-secondary w-64 mt-4 md:mt-0 uppercase">Typography /
+                        Print</div>
+                    <div
+                        class="font-label-sm text-label-sm text-secondary w-32 mt-4 md:mt-0 md:text-right flex items-center md:justify-end gap-2 uppercase">
+                        Archived
+                    </div>
+                </a>
+                <!-- Row 4 -->
+                <a class="group flex flex-col md:flex-row md:items-center w-full py-8 md:py-12 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 md:px-0 md:mx-0 cursor-pointer"
+                    href="#">
+                    <div class="font-label-sm text-label-sm text-secondary w-32 mb-2 md:mb-0">2022</div>
+                    <div
+                        class="flex-1 font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">
+                        Serein Packaging</div>
+                    <div class="font-label-sm text-label-sm text-secondary w-64 mt-4 md:mt-0 uppercase">Industrial /
+                        Visual</div>
+                    <div
+                        class="font-label-sm text-label-sm text-primary w-32 mt-4 md:mt-0 md:text-right flex items-center md:justify-end gap-2 uppercase">
+                        Live <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                    </div>
+                </a>
+                <!-- Row 5 -->
+                <a class="group flex flex-col md:flex-row md:items-center w-full py-8 md:py-12 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 md:px-0 md:mx-0 cursor-pointer"
+                    href="#">
+                    <div class="font-label-sm text-label-sm text-secondary w-32 mb-2 md:mb-0">2022</div>
+                    <div
+                        class="flex-1 font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">
+                        Vessel Web Platform</div>
+                    <div class="font-label-sm text-label-sm text-secondary w-64 mt-4 md:mt-0 uppercase">E-Commerce / Dev
+                    </div>
+                    <div
+                        class="font-label-sm text-label-sm text-secondary w-32 mt-4 md:mt-0 md:text-right flex items-center md:justify-end gap-2 uppercase">
+                        Concept
+                    </div>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="view-project-graphic-design" class="spa-view">
+        <main class="flex-grow pt-32">
+            <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+                <header class="mb-24 md:mb-32">
+                    <h1
+                        class="font-headline-display text-headline-display text-primary mb-8 break-words text-balance reveal">
+                        Graphic Design</h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed text-pretty reveal">
+                        A collection of editorial layouts, typography, and poster designs.
+                    </p>
+                </header>
+                <section class="mb-section-gap grid grid-cols-1 gap-12">
+                    <!-- Embeds for PDFs -->
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/Going about life.pdf" class="w-full h-full"
+                            frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/Logo and Poster design.pdf" class="w-full h-full"
+                            frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/Lots children.pdf" class="w-full h-full" frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/Medha Front Page Assignment.pdf" class="w-full h-full"
+                            frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/TYPOGRAPHY.pdf" class="w-full h-full" frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/Travel Magazine Final.pdf" class="w-full h-full"
+                            frameborder="0"></iframe>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[3/4] md:aspect-auto md:h-[800px] overflow-hidden">
+                        <iframe src="Graphic Design/indian football future pg 1.pdf" class="w-full h-full"
+                            frameborder="0"></iframe>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-project-ad-pr" class="spa-view">
+        <main class="flex-grow pt-32">
+            <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+                <header class="mb-24 md:mb-32">
+                    <h1
+                        class="font-headline-display text-headline-display text-primary mb-8 break-words text-balance reveal">
+                        Ad & PR</h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed text-pretty reveal">
+                        Campaign strategies, multimedia advertising, and public relations work.
+                    </p>
+                </header>
+                <section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/IMG-20241125-WA0090.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/IMG-20241125-WA0091.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/IMG-20241125-WA0103.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/IMG-20241126-WA0016.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/WhatsApp Image 2026-04-24 at 1.03.01 AM.jpeg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[4/3] overflow-hidden">
+                        <img src="Ad& PR/WhatsApp Image 2026-04-24 at 1.08.57 AM.jpeg"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div
+                        class="w-full bg-surface-container aspect-[16/9] col-span-1 md:col-span-2 overflow-hidden bg-black">
+                        <video controls class="w-full h-full" src="Ad& PR/VID-20241125-WA0084.mp4"></video>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[16/9] overflow-hidden bg-black">
+                        <video controls class="w-full h-full"
+                            src="Ad& PR/WhatsApp Video 2026-04-24 at 1.03.26 AM.mp4"></video>
+                    </div>
+                    <div class="w-full bg-surface-container aspect-[16/9] overflow-hidden bg-black">
+                        <video controls class="w-full h-full"
+                            src="Ad& PR/WhatsApp Video 2026-04-24 at 1.04.32 AM.mp4"></video>
+                    </div>
+                    <div
+                        class="w-full bg-surface-container aspect-[16/9] col-span-1 md:col-span-2 overflow-hidden bg-black">
+                        <video controls class="w-full h-full" src="Ad& PR/pilgrim.mp4"></video>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-project-achievements" class="spa-view">
+        <main class="flex-grow pt-32">
+            <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+                <header class="mb-24 md:mb-32">
+                    <h1
+                        class="font-headline-display text-headline-display text-primary mb-8 break-words text-balance reveal">
+                        Achievements</h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed text-pretty reveal">
+                        Press clippings, awards, and industry recognition.
+                    </p>
+                </header>
+                <section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <div class="w-full bg-surface-container overflow-hidden">
+                        <img src="Achievement/Ad Prize.jpeg"
+                            class="w-full h-auto transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container overflow-hidden">
+                        <img src="Achievement/Dainik Bhaskar Published article.jpeg"
+                            class="w-full h-auto transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <div class="w-full bg-surface-container col-span-1 md:col-span-2 overflow-hidden">
+                        <img src="Achievement/Medha Dainik bhaskar.jpg.jpeg"
+                            class="w-full h-auto transition-transform duration-700 hover:scale-105">
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="view-project-video" class="spa-view">
+        <main class="flex-grow pt-32">
+            <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+                <header class="mb-24 md:mb-32">
+                    <h1
+                        class="font-headline-display text-headline-display text-primary mb-8 break-words text-balance reveal">
+                        Video Work / Multimedia Projects</h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed text-pretty reveal">
+                        I create video stories that combine reporting, scripting, voiceover, and editing to deliver
+                        clear and engaging narratives. My work focuses on real-world issues and storytelling that
+                        connects with audiences.
+                    </p>
+                </header>
+                <section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300 md:col-span-2">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <video controls class="w-full h-full" src="Video/01500.mp4"></video>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Featured
+                                Documentary Project</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">An in-depth
+                                multimedia exploration combining on-ground reporting, visual storytelling, and precise
+                                editing.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/gjuqE-7lVW8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script | Voiceover</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 01</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/aQ4ezaqdbcg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing
+                                    | Voiceover</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 02</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/FmylDRWqpCg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 03</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/5SnI5uHoq2A"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 04</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/z0UeXSukFMU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 05</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Du-30sN-FLQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Voiceover
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 06</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xWT0D9FnFdM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Script
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 07</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/C7AUQZltd-c"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 08</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/CC37hI_bxac"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 09</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/3Lsqab8GCmU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Script
+                                    | Voiceover</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 10</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/d3d4dF43DW8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 11</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/NPgrwPkN1wA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 12</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ZDnQ7F3ZHsw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Voiceover | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 13</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/FpGZQvmmCpY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 14</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/57Es2oMWXlI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script | Voiceover</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 15</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/XCSFX09sTOA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing
+                                    | Voiceover</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 16</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/5ObrNidubi8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Script</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 17</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/wPs8wB9S_kk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 18</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/WyTvQEkU95s"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 19</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-full aspect-[16/9] overflow-hidden bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/gpgO5pQkL14"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow bg-white dark:bg-neutral-900">
+                            <div
+                                class="inline-block bg-surface px-3 py-1 self-start mb-4 rounded border border-outline-variant/30">
+                                <span
+                                    class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reporting
+                                    | Editing</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-3 text-balance">Multimedia
+                                Story 20</h2>
+                            <p class="font-body-md text-body-md text-secondary text-pretty flex-grow">A compelling video
+                                narrative focusing on real-world issues and impactful storytelling.</p>
+                        </div>
+                    </article>
+
+                    <div
+                        class="w-full bg-surface p-12 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center md:col-span-2 mt-12 hover:shadow-lg transition-shadow duration-300">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6"
+                            data-icon="description">description</span>
+                        <h2 class="font-headline-md text-headline-md text-primary mb-4">Dissertation</h2>
+                        <p class="font-body-md text-body-md text-secondary max-w-lg mb-8">Download my complete
+                            dissertation document to read about my academic research and findings.</p>
+                        <a href="Dessertation/Dessertation.docx" download
+                            class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest py-4 px-8 rounded hover:bg-surface-container-lowest hover:text-primary border border-transparent hover:border-primary transition-all duration-300">
+                            Download DOCX
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="view-project-krom" class="spa-view">
+        <main class="flex-grow pt-32">
+            <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+
+                <div class="max-w-container-max mx-auto px-8 md:px-16 w-full">
+                    <!-- Hero Header -->
+                    <header class="mb-24 md:mb-32">
+                        <div class="grid grid-cols-12 gap-gutter">
+                            <div class="col-span-12 md:col-span-9 lg:col-span-8">
+                                <h1
+                                    class="font-headline-display text-headline-display text-primary mb-8 break-words text-balance reveal">
+                                    Krom Studio</h1>
+                                <p
+                                    class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed text-pretty reveal">
+                                    Refining brand narratives through minimalist precision and strategic identity
+                                    design.
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Hero Image -->
+                    <div class="w-full mb-32 h-[500px] md:h-[700px] lg:h-[800px] overflow-hidden bg-surface-container">
+                        <img alt="Krom Studio Brand Identity Hero"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="abstract minimalist architectural shapes in soft natural light, conveying structural elegance and premium design aesthetic"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCji1QmjjSB1DGaGnmWWKEOuSE3d_C0kkiAN7KZVJFJxszbMWhoQpgiN43Qlms9I9FaQRnFNw2-5dAS5er-tSUW64bDcNf4CgonZdobRLuA57rAJq7wFnZnzG5QiQfwKwYBwZTsdY2wcolkiV4OZW7MgLFfuBdaJSInLKqYNLt1xEhtAzcJ0bMNCHat7ZH15FuaMzE04fQ2VThb10bXd-yTnDfzPC5s-LBS47AmjyjDt6UkGKXidJ-jROseydIz4OB-pLtex9GQ-YSI" />
+                    </div>
+                    <!-- Metadata -->
+                    <div class="grid grid-cols-12 gap-gutter mb-section-gap border-t border-outline-variant pt-8">
+                        <div class="col-span-6 md:col-span-3">
+                            <h3 class="font-label-sm text-label-sm text-secondary uppercase mb-2 text-balance reveal">
+                                Client</h3>
+                            <p class="font-body-md text-body-md text-primary text-pretty reveal">Krom Studio</p>
+                        </div>
+                        <div class="col-span-6 md:col-span-3">
+                            <h3 class="font-label-sm text-label-sm text-secondary uppercase mb-2 text-balance reveal">
+                                Role</h3>
+                            <p class="font-body-md text-body-md text-primary text-pretty reveal">Brand Identity Lead</p>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 mt-8 md:mt-0">
+                            <h3 class="font-label-sm text-label-sm text-secondary uppercase mb-2 text-balance reveal">
+                                Duration</h3>
+                            <p class="font-body-md text-body-md text-primary text-pretty reveal">8 Weeks</p>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 mt-8 md:mt-0">
+                            <h3 class="font-label-sm text-label-sm text-secondary uppercase mb-2 text-balance reveal">
+                                Tools</h3>
+                            <p class="font-body-md text-body-md text-primary text-pretty reveal">Illustrator, Photoshop,
+                                Figma</p>
+                        </div>
+                    </div>
+                    <!-- The Brief & Strategy (Asymmetric Layout) -->
+                    <section class="grid grid-cols-12 gap-gutter mb-section-gap">
+                        <div class="col-span-12 md:col-span-5 md:col-start-1">
+                            <h2 class="font-headline-lg text-headline-lg text-primary mb-8 text-balance reveal">The
+                                Brief</h2>
+                            <div class="h-[400px] bg-surface-container overflow-hidden mb-8 md:mb-0">
+                                <img alt="Minimalist office inspiration" class="w-full h-full object-cover"
+                                    data-alt="clean minimal office interior with white walls, sharp lines, and soft diffused natural lighting"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMYoiNJDXdzOMiDSYHUfGc2KIrZzzXnC82pRfx6lwo6LNZSTZ-7T6yk8Dxm1-RPQ9Bf4HT6ipGMZGlk3SSV90CB0Ubsi8Katoboyu2YzUHEZOGsQn66BPtXA4rky_9fOOliy1nI8__sXt0RZ8HKFjTOrqgX68Cj4IPPu04Q0vypEa1bTj6PpSDIMjSyzPbx-3H7AZwaKDMw--6ucecvJ-yAwM2zrHxb-sE0_Gi5tQ_IhLcLtcNzqdomrvCMudedMm80KpH4sGQouzs" />
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-5 md:col-start-7 flex flex-col justify-center">
+                            <div class="mb-16">
+                                <p
+                                    class="font-body-md text-body-md text-secondary leading-relaxed mb-6 text-pretty reveal">
+                                    The challenge was to develop a modern, architectural brand identity for a premium
+                                    design studio. The identity needed to reflect their core philosophy: stripping away
+                                    the non-essential to let the work speak for itself.
+                                </p>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary mb-6 text-balance reveal">The
+                                Strategy</h2>
+                            <p class="font-body-md text-body-md text-secondary leading-relaxed text-pretty reveal">
+                                We focused on an editorial approach, utilizing extreme whitespace, a monochromatic
+                                palette, and rigid structural alignment. The strategy positioned the brand not just as a
+                                service provider, but as a curator of high-end design experiences.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Visual Language (Bento-ish Display) -->
+                    <section class="mb-section-gap">
+                        <h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-balance reveal">Visual
+                            Language</h2>
+                        <div class="grid grid-cols-12 gap-gutter h-[600px]">
+                            <div
+                                class="col-span-12 md:col-span-8 bg-surface-container flex flex-col justify-center p-12">
+                                <p class="font-label-sm text-label-sm text-secondary uppercase mb-8 text-pretty reveal">
+                                    Typography System</p>
+                                <h1
+                                    class="font-headline-display text-headline-display text-primary leading-none mb-4 text-balance reveal">
+                                    Aa</h1>
+                                <p class="font-headline-md text-headline-md text-primary mb-2 text-pretty reveal">Inter
+                                </p>
+                                <p class="font-body-md text-body-md text-secondary text-pretty reveal">A highly legible,
+                                    neo-grotesque sans-serif providing neutrality and precision.</p>
+                            </div>
+                            <div class="col-span-12 md:col-span-4 flex flex-col gap-gutter">
+                                <div class="flex-1 bg-primary flex items-center justify-center p-8">
+                                    <span
+                                        class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest">Primary
+                                        Black</span>
+                                </div>
+                                <div
+                                    class="flex-1 bg-surface-container border border-outline-variant flex items-center justify-center p-8">
+                                    <span
+                                        class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Surface
+                                        Gray</span>
+                                </div>
+                                <div
+                                    class="flex-1 bg-white border border-outline-variant flex items-center justify-center p-8">
+                                    <span
+                                        class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Pure
+                                        White</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Execution Grid -->
+                    <section class="mb-section-gap">
+                        <h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-balance reveal">Execution
+                        </h2>
+                        <div class="grid grid-cols-12 gap-gutter">
+                            <div class="col-span-12 md:col-span-7 h-[500px] bg-surface-container overflow-hidden">
+                                <img alt="Stationery mockup" class="w-full h-full object-cover"
+                                    data-alt="high-end minimalist business card mockup on textured dark stone surface with dramatic shadow"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuIoc6ohPs8dEYQ4Jj-fQaKMMPhC7_U5wmCb1VWGB1s5-JUVekdOKqlvrFO4A5N4W0XIvpTTkEKftVYTekEdT5tI_Wt6VQpQPvqwZv9lZR8ZeLlZ159AyzWtNypkd2KMHDTF_6oMjPA4T_mEWpcknB8Kj3qIjKx-s73zPrv-FEnYW-6-4st9T-lD84uvpBfNSMfFvEB6qIj8sc7FqY2AkkOhoNkmBN1nXKmdmAcSVOIip6xGpwSGrIJyWRNnD4fXdcs66XpfcVs4Ml" />
+                            </div>
+                            <div class="col-span-12 md:col-span-5 h-[500px] bg-surface-container overflow-hidden">
+                                <img alt="Digital presence" class="w-full h-full object-cover"
+                                    data-alt="digital interface displayed on a sleek modern monitor in a dark moody studio setting"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEg9ioaq3dXaWTEVHiZh4qKYio5BEmkhzk0qBvE1MZQ9q07cSd6HSdFjojwE4LFW85nm7QGbC5QJuLNzZRzbwGQvGW2PjkNlwJEGhmWxqZco1_81TkEJA9gSk4rwkzqc0F3Yf4xVjxFgQugMUFoZOAkJsQDGFMYbg4ZdAkRahjX7G7EtmiACKEOpc0T64qp2IJGgd-mKaYm9Ow2a2jaM_1Kn-uT3T5j-d8nXQMkQNxwog1F3aIGOtGCdZXdygtFccSrYZruFoZKHkd" />
+                            </div>
+                            <div class="col-span-12 h-[600px] bg-surface-container overflow-hidden mt-gutter">
+                                <img alt="Brand guidelines spread" class="w-full h-full object-cover"
+                                    data-alt="monochromatic editorial spread layout showing typography and grid alignment on premium matte paper"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpoTPJw_GlD04OjthRbBNLYSgfQmRQvSUbeUwj6AFIyNjBlkSPJReEgatobPfWQLS-kFsUFoUlJ2F13CJ0A03OTKwlNV1mwQajcHWIlpDBPsgqwjFgyyuUln3Hw_YF61siCgUW3YEHvuH2fHM-c7qBB0dGYeY24SjQxq23ax_J43kgpXvXbZjfGvE1o5Yh2im9L151NfLr5HhzS7BniGQcrxSCLow3MyTgaCCpmYDyP8RUN15hWLBPMyrSKhP5w9UzHKpC3F3KbFYy" />
+                            </div>
+                        </div>
+                    </section>
+                    <!-- The Impact -->
+                    <section class="border-t border-outline-variant pt-24 mb-32">
+                        <div class="grid grid-cols-12 gap-gutter">
+                            <div class="col-span-12 md:col-span-4">
+                                <h2 class="font-headline-lg text-headline-lg text-primary mb-6 text-balance reveal">The
+                                    Impact</h2>
+                            </div>
+                            <div class="col-span-12 md:col-span-8 flex flex-col md:flex-row gap-16 md:gap-24">
+                                <div>
+                                    <p
+                                        class="font-headline-display text-headline-display text-primary leading-none mb-4 text-pretty reveal">
+                                        +35%</p>
+                                    <p
+                                        class="font-label-sm text-label-sm text-secondary uppercase tracking-widest text-pretty reveal">
+                                        Brand Recognition</p>
+                                </div>
+                                <div>
+                                    <p
+                                        class="font-headline-display text-headline-display text-primary leading-none mb-4 text-pretty reveal">
+                                        100%</p>
+                                    <p
+                                        class="font-label-sm text-label-sm text-secondary uppercase tracking-widest text-pretty reveal">
+                                        Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="view-success" class="spa-view">
+        <main
+            class="flex-grow flex items-center justify-center p-8 md:p-margin-edge w-full max-w-container-max mx-auto min-h-[80vh]">
+
+            <div class="flex flex-col items-center text-center max-w-2xl">
+                <!-- Status Chip -->
+                <div
+                    class="px-4 py-2 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded mb-8 tracking-widest">
+                    Status: Delivered
+                </div>
+                <!-- Icon -->
+                <span class="material-symbols-outlined text-[48px] text-primary mb-8"
+                    style="font-variation-settings: 'FILL' 0, 'wght' 200;">
+                    check_circle
+                </span>
+                <!-- Heading -->
+                <h1 class="font-headline-lg text-headline-lg text-primary mb-6 text-balance reveal">
+                    Message Sent.
+                </h1>
+                <!-- Subtext -->
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg text-pretty reveal">
+                    Thank you for reaching out. I have received your inquiry and will get back to you as soon as
+                    possible to discuss your project.
+                </p>
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto">
+                    <a class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded border border-transparent hover:bg-surface-container-lowest hover:text-primary hover:border-primary transition-colors duration-300"
+                        href="#home">
+                        Return to Home
+                    </a>
+                    <a class="w-full sm:w-auto px-8 py-4 bg-transparent text-primary font-label-sm text-label-sm uppercase rounded border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-300"
+                        href="#home">
+                        Explore Projects
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer
+        class="bg-white dark:bg-neutral-900 border-t border-neutral-100 dark:border-neutral-800 flat no shadows w-full py-20 px-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-[1440px] mx-auto gap-8">
+            <div
+                class="text-lg font-bold text-neutral-900 dark:text-neutral-50 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors">
+                MEDHA SAHU
+            </div>
+            <div class="flex gap-6">
+                <a class="font-inter text-xs tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors"
+                    href="#">
+                    LinkedIn
+                </a>
+                <a class="font-inter text-xs tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors"
+                    href="#">
+                    Instagram
+                </a>
+                <a class="font-inter text-xs tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors"
+                    href="#">
+                    Mail
+                </a>
+            </div>
+            <div class="font-inter text-xs tracking-widest uppercase text-neutral-900 dark:text-neutral-50 font-bold">
+                Â© 2024 MEDHA SAHU. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BottomNavBar -->
+    <nav
+        class="fixed bottom-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-t border-neutral-100 dark:border-neutral-900 font-inter text-[10px] uppercase tracking-widest text-black dark:text-white fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-8 md:hidden">
+        <!-- Active Tab: Work -->
+        <a class="flex flex-col items-center text-black dark:text-white font-bold scale-95 active:scale-90 transition-transform"
+            href="#home" onclick="navigateTo('home')">
+            <span class="material-symbols-outlined mb-1 text-black dark:text-white" data-icon="grid_view"
+                data-weight="fill" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+            <span class="mt-1">Work</span>
+        </a>
+        <!-- Inactive Tab: About -->
+        <a class="flex flex-col items-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white transition-colors scale-95 active:scale-90 transition-transform"
+            href="#home" onclick="navigateTo('home')">
+            <span class="material-symbols-outlined mb-1 text-neutral-400 dark:text-neutral-600"
+                data-icon="person">person</span>
+            <span class="mt-1">About</span>
+        </a>
+        <!-- Inactive Tab: Contact -->
+        <a class="flex flex-col items-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white transition-colors scale-95 active:scale-90 transition-transform"
+            href="#home" onclick="navigateTo('home')">
+            <span class="material-symbols-outlined mb-1 text-neutral-400 dark:text-neutral-600"
+                data-icon="mail">mail</span>
+            <span class="mt-1">Contact</span>
+        </a>
+    </nav>
+
+    <script>
+        function navigateTo(viewName) {
+            document.querySelectorAll('.spa-view').forEach(el => el.classList.remove('active'));
+            const target = document.getElementById('view-' + viewName);
+            if (target) {
+                target.classList.add('active');
+            }
+            if (window.location.hash !== '#about' && window.location.hash !== '#contact') {
+                window.scrollTo(0, 0);
+            }
+            // Re-trigger scroll animations
+            setTimeout(initReveal, 100);
+        }
+
+        function handleHashChange() {
+            const hash = window.location.hash;
+            if (hash === '#archive') {
+                navigateTo('archive');
+            } else if (hash === '#project-graphic-design') {
+                navigateTo('project-graphic-design');
+            } else if (hash === '#project-ad-pr') {
+                navigateTo('project-ad-pr');
+            } else if (hash === '#project-achievements') {
+                navigateTo('project-achievements');
+            } else if (hash === '#project-video') {
+                navigateTo('project-video');
+            } else if (hash === '#success') {
+                navigateTo('success');
+            } else if (hash === '#home' || hash === '') {
+                navigateTo('home');
+            } else if (hash === '#about' || hash === '#contact') {
+                document.querySelectorAll('.spa-view').forEach(el => el.classList.remove('active'));
+                document.getElementById('view-home').classList.add('active');
+                setTimeout(() => {
+                    const targetEl = document.querySelector(hash);
+                    if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth' });
+                }, 50);
+            }
+            setTimeout(initReveal, 100);
+        }
+
+        window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
+
+        // Intersection Observer for Scroll Reveal
+        function initReveal() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: unobserve after animating once
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                el.classList.remove('active'); // reset
+                observer.observe(el);
+            });
+        }
+
+        // Run initial reveal setup
+        setTimeout(initReveal, 200);
+    </script>
+</body>
+
+</html>
